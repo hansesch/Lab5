@@ -149,14 +149,14 @@ public class GTv1 {
 	public void testCreatesNextDateAndCallsRun() throws Throwable {
 	    NextDate nextDate0 = new NextDate((-3161), (-3161), (-3161));
 	    String string0 = nextDate0.run(12, 31, 1844);
-	    assertEquals("12/32/1844", string0);
+	    assertEquals("1/1/1845", string0);
 	}
 
 	@Test(timeout = 4000)
 	public void testRunReturningNonEmptyString() throws Throwable {
 	    NextDate nextDate0 = new NextDate((-3161), (-3161), (-3161));
 	    String string0 = nextDate0.run(12, 31, 1844);
-	    assertEquals("12/32/1844", string0);
+	    assertEquals("1/1/1845", string0);
 	}
 
 	@Test(timeout = 4000)
